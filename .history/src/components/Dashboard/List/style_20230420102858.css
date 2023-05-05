@@ -1,0 +1,23 @@
+.list-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem;
+  padding: 1rem ;
+  border-radius: 1rem;
+}
+.list-row:hover{
+    transition: all 0.3s;
+    background-color: var(--darkgray);
+}
+.list-row td{
+    text-align: left;
+    width: 45%;
+}
+
+.td-imgae{
+    width: 3rem !important;
+    margin-r
+    ight: 2rem;
+}

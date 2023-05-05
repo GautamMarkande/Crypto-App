@@ -1,0 +1,11 @@
+.pagination-flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    color: var(--white)!important;
+     background-color: var(--blue) !important;
+     border:1px solid var(--white) !important;
+text-colo
+    border-color:var(--blue) !important
+}

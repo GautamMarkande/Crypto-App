@@ -1,0 +1,6 @@
+.back-to-top-btn{
+position: fixed;
+display: flex;
+align-items: center;
+width: 3rem;
+}

@@ -1,0 +1,10 @@
+.list-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+.list-row td{
+    align-items: left;
+    width: 18;
+}

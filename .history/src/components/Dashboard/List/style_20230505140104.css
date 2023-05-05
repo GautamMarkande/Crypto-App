@@ -1,0 +1,125 @@
+.list-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.list-row:hover {
+  transition: all 0.3s;
+  background-color: var(--darkgray);
+}
+.list-row td {
+  text-align: left;
+  width: 18%;
+}
+
+.td-imgae {
+  width: 3rem !important;
+  margin-right: 2rem;
+}
+.mobile-td-mkt {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .td-icon {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .td-total-volume {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .desktop-td-mkt {
+    display: none;
+  }
+  .mobile-td-mkt {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.1rem;
+    border-radius: 0.25rem;
+    font-size: 0.07px !important;
+    padding: 0.5rem !important ;
+  }
+  .td-imgae {
+    width: 0.8rem !important;
+    margin-right: 0.3rem;
+  }
+  .list-row td {
+    text-align: left;
+    width: 1%;
+    font-size: 0.5rem;
+  }
+  .chip-flex {
+    display: flex;
+    flex-direction: flex-start;
+    gap: 0.2rem;
+    align-items: center;
+    margin: 0.2rem 0.5rem;
+  }
+  .prise-flex {
+    border: 0.25px solid var(--green);
+    border-radius: 0.7rem;
+    padding: 0.15rem 0.25rem;
+    text-align: center;
+    font-weight: 0.7rem;
+    font-size: 0.7rem !important;
+    color: var(--green);
+    /* min-width: 7px; */
+  }
+  .icon-chip {
+    border: 05px solid var(--green);
+    height: 0.25rem !important;
+    width: 0.25rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    color: var(--green);
+  }
+  .coin-price {
+    color: var(--green);
+    font-size: 0.7rem;
+  }
+  .total_value {
+    color: var(--gray);
+    font-size: 0.5rem;
+    padding: 0.8rem 0.rem;
+  }
+  .coin-logo {
+    height: 0.25rem;
+    width: 0.25rem;
+  }
+  .coin-symbol {
+    color: var(--white);
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    font-size: 0.7rem;
+    margin: 0;
+  }
+  .coin-name {
+    color: var(--gray);
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 0.7rem;
+    margin: 0;
+  }
+  .name-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

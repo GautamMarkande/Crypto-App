@@ -1,0 +1,13 @@
+.list-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.list-row td{
+    text-align: left;
+    width: 20%;
+}
+.td-imgae{
+    width: 3rem !important;
+    margin-right: 1.5rem;
+}

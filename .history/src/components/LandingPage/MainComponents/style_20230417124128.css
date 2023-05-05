@@ -1,0 +1,10 @@
+.flex-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 3rem;
+}
+.track-crypto-heading,.real-time-heading{
+    font-size: 7rem;
+    margin: ;
+}

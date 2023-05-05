@@ -1,0 +1,8 @@
+.coin-info-heading,
+.coin-info-desc{
+    margin: 1.5rem;
+}
+.coin-info-desc a{ 
+text-decoration: underline !important;
+}
+.coin-info-desc a

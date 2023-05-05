@@ -1,0 +1,5 @@
+.pagination-flex{
+    background-color:"yellow";
+    display:flex;
+    padding: 1.5rem;
+}

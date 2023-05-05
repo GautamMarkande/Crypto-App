@@ -1,0 +1,10 @@
+.navbar{
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 1.5rem,3;
+    left: 0;
+    top: 0;
+}

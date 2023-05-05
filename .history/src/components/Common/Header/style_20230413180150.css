@@ -1,0 +1,15 @@
+.navbar{
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 1.5rem,3rem;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.links{
+    display: flex;
+    ja
+}

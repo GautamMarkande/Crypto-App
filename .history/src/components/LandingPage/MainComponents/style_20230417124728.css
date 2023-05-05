@@ -1,0 +1,18 @@
+.flex-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 3rem;
+}
+.track-crypto-heading,.real-time-heading{
+    font-size: 7rem;
+    margin: 0;
+}
+.real-time-heading{
+    color: var(--blue);
+}
+.track-crypto-heading{
+    color: var(--wh);
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

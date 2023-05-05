@@ -1,0 +1,8 @@
+.back-to-top-btn{
+position: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 3rem;
+height: 3rem;
+}

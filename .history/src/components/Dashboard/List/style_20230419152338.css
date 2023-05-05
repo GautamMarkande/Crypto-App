@@ -1,0 +1,12 @@
+.list-row {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.td-imgae{
+    width: 3rem !important;
+    margin-right: 1.5rem;
+}
