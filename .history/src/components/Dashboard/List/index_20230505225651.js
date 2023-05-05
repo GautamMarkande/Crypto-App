@@ -80,12 +80,12 @@ function List({ coin }) {
         </Tooltip>
         <Tooltip title="Market Cap" placement="bottom-start">
           <td className="desktop-td-mkt ">
-            <p className="total_value1">${coin.market_cap.toLocaleString()}</p>
+            <p className="total_value">${coin.market_cap.toLocaleString()}</p>
           </td>
         </Tooltip>
         <Tooltip title="Market Cap" placement="bottom-start">
           <td className="mobile-td-mkt">
-            <p className="total_value1">${convertNumber(coin.market_cap)}</p>
+            <p className="total_value">${convertNumber(coin.market_cap)}</p>
           </td>
         </Tooltip>
       </tr>

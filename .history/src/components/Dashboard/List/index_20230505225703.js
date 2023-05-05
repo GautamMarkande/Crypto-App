@@ -85,7 +85,7 @@ function List({ coin }) {
         </Tooltip>
         <Tooltip title="Market Cap" placement="bottom-start">
           <td className="mobile-td-mkt">
-            <p className="total_value1">${convertNumber(coin.market_cap)}</p>
+            <p className="total_value">${convertNumber(coin.market_cap)}</p>
           </td>
         </Tooltip>
       </tr>
