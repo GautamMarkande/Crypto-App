@@ -9,7 +9,7 @@ export default function SelectDay({ days, handleChangeDays, noPtag }) {
       {!noPtag && <p className="ppricetag">Price Change in</p>}
       {/* <InputLabel id="demo-simple-select-label">Days</InputLabel> */}
       <Select
-        className="select"
+        className=""
         sx={{
           height: "2.5rem",
           color: "var(--white)",

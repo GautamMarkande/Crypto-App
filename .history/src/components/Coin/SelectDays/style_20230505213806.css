@@ -5,11 +5,9 @@
     gap: 0.5rem;
 }
 
-@media only screen and (max-width: 400px){
-.ppricetag{
+/* @media only screen and (max-width: 400px){
+p{
 display: none;
+    margin:-3rem
 }
-.select{
-margin-left: -20px;
-}
-}
+} */

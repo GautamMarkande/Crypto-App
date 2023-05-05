@@ -52,7 +52,6 @@ function SelectCoins({ crypto1, crypto2, handleCoinChange }) {
       </Select>
       <p className="tagp">Crypto 2</p>
       <Select
-        className="selectprice"
         sx={styles}
         value={crypto2}
         label="Crypto 2"

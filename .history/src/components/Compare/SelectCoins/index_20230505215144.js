@@ -34,12 +34,11 @@ function SelectCoins({ crypto1, crypto2, handleCoinChange }) {
   }
   return (
     <div className="coins-flex">
-      <p className="tagp">Crypto 1</p>
+      <p>Crypto 1</p>
       <Select
-        className="selectprice"
         sx={styles}
         value={crypto1}
-        label="Crypto 1"
+        label="Crypto 1
         onChange={(event) => handleCoinChange(event, false)}
       >
         {allCoins
@@ -50,9 +49,8 @@ function SelectCoins({ crypto1, crypto2, handleCoinChange }) {
             </MenuItem>
           ))}
       </Select>
-      <p className="tagp">Crypto 2</p>
+      <p>Crypto 2</p>
       <Select
-        className="selectprice"
         sx={styles}
         value={crypto2}
         label="Crypto 2"

@@ -1,15 +1,13 @@
-.select-days{
+.coins-flex{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
+    margin:0rem 1.5rem;
 }
-
 @media only screen and (max-width: 400px){
-.ppricetag{
+coins-flex{
 display: none;
 }
-.select{
-margin-left: -20px;
-}
+
 }

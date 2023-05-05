@@ -6,10 +6,9 @@ import "./style.css";
 export default function SelectDay({ days, handleChangeDays, noPtag }) {
   return (
     <div className="select-days">
-      {!noPtag && <p className="ppricetag">Price Change in</p>}
+      {!noPtag && <p className="ppri">Price Change in</p>}
       {/* <InputLabel id="demo-simple-select-label">Days</InputLabel> */}
       <Select
-        className="select"
         sx={{
           height: "2.5rem",
           color: "var(--white)",
