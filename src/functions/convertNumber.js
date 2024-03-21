@@ -1,14 +1,12 @@
 export const convertNumber = (number) => {
-  console.log(number, "P{P{");
   const numberWithCommas = number.toLocaleString();
   var arr = numberWithCommas.split(",");
-  console.log(arr, "P{{{{}}");
   if (arr.length === 5) {
     //Trillions
     return arr[0] + "." + arr[1].slice(0, 2) + "T";
   } else if (arr.length === 4) {
     //Billions
-    console.log(arr, "{{l{}}}", arr[0] + "." + arr[1].slice(0, 2) + "B");
+    // console.log(, arr[0] + "." + arr[1].slice(0, 2) + "B");
     return arr[0] + "." + arr[1].slice(0, 2) + "B";
   } else if (arr.length === 3) {
     // Millions

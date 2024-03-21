@@ -4,6 +4,7 @@ import Button from '../../Common/Button';
 import iphone from "../../../assets/iphone.png";
 import gradient from '../../../assets/gradient.png';
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
 function MainComponents() {
   return (
     <div className="flex-info">
@@ -15,7 +16,13 @@ function MainComponents() {
           do so!
         </p>
         <div className="btn-flex">
-          <Button text={"Dhasbord"} />
+        <Link to="/Dashboard">
+          <Button
+            text={"Dashboard"}
+            // outlined={true}
+            onClick={() => console.log("btncliked")}
+          />
+        </Link>
           <Button text={"Share"} outlined={true} />
         </div>
       </div>

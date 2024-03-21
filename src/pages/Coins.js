@@ -24,7 +24,7 @@ function CoinsPage() {
     if (id) {
       getData();
     }
-  }, [id]);
+  }, []);
 
   async function getData() {
     const data = await getCoinData(id);
@@ -69,7 +69,7 @@ function CoinsPage() {
         <Loader />
       ) : (
         <>
-          <div className="grey-wrapper" style={{ padding: "0rem 1rem" }}>
+          <div className="grey-wrapper" style={{ padding: "0rem 1rem;" }}>
             <List coin={coinData} />
           </div>
           <div className="grey-wrapper">

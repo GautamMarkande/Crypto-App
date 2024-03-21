@@ -4,13 +4,15 @@ import {chart as chartjs} from "chart.js/auto"
 import { convertNumber } from '../../../functions/convertNumber';
 
 function LineChart({ chartData, priceType, multiAxis }) {
-    const options = {
+  let  options = {}
+  if(multiAxis){
+    options = {
       plugins: {
         legend: {
           display: multiAxis ? true : false,
         },
       },
-      responsiv: true,
+      responsive: true,
       interaction: {
         mode: "index",
         intersect: false,
@@ -22,7 +24,7 @@ function LineChart({ chartData, priceType, multiAxis }) {
           position: "left",
           ticks: {
             callback: function (value, index, ticks) {
-              if (priceType == "price") return "$" + value.toLocaleString();
+              if (priceType === "price") return "$" + value.toLocaleString();
               else {
                 return "$" + convertNumber(value);
               }
@@ -35,7 +37,7 @@ function LineChart({ chartData, priceType, multiAxis }) {
           position: "right",
           ticks: {
             callback: function (value, index, ticks) {
-              if (priceType == "price") return "$" + value.toLocaleString();
+              if (priceType === "price") return "$" + value.toLocaleString();
               else {
                 return "$" + convertNumber(value);
               }
@@ -44,6 +46,49 @@ function LineChart({ chartData, priceType, multiAxis }) {
         },
       },
     };
+  }else{
+    options = {
+      plugins: {
+        legend: {
+          display: multiAxis ? true : false,
+        },
+      },
+      responsive: true,
+      interaction: {
+        mode: "index",
+        intersect: false,
+      },
+      scales: {
+        crypto1: {
+          type: "linear",
+          display: true,
+          position: "left",
+          ticks: {
+            callback: function (value, index, ticks) {
+              if (priceType === "price") return "$" + value.toLocaleString();
+              else {
+                return "$" + convertNumber(value);
+              }
+            },
+          },
+        },
+        crypto2: {
+          type: "linear",
+          display: !true,
+          position: "right",
+          ticks: {
+            callback: function (value, index, ticks) {
+              if (priceType === "price") return "$" + value.toLocaleString();
+              else {
+                return "$" + convertNumber(value);
+              }
+            },
+          },
+        },
+      },
+    };
+  }
+    
   return <Line data={chartData} options={options} />;
 }
 
